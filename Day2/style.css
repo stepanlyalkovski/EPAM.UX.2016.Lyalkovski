@@ -1,0 +1,63 @@
+* {	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+p {
+    text-indent: 50px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 30px;
+	width: 645px;
+	border: 1px solid #FEA745;
+	background-color: #FAF5D7;
+}
+
+.container p:first-letter {
+	color: red;
+	font-size: 19px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.title-main {
+	padding-right: 20px;
+	font-size: 30px;
+}
+
+.title-poem {
+	margin-bottom: 3span: ;0px;
+}
+
+.image-main{
+	float: left;
+	padding-top: 20px;
+}
+
+.author-list-item {
+	list-style-type: none;
+}
+
+.author-book-list {
+	list-style-type: disc;
+}
+
+.author-name {
+	color: #666
+}
+
+.author-book-title a{
+	font-style: none;
+	text-decoration: none;
+	color: #8E3D00;
+}
+
+.image-link {
+	text-align: right;
+}
+
+.description {
+	color: gray;
+}
