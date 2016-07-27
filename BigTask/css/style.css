@@ -1,0 +1,95 @@
+* {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+h2,
+h3,
+li,
+dt {
+  text-transform: uppercase;
+}
+
+p,
+time {
+  text-transform: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.layout-column {
+  float: left;
+}
+
+.layout-column-left {
+  width: 38%;
+  margin-right: 2%;
+}
+
+.layout-column-right {
+  width: 60%;
+}
+
+.column-item-title,
+.contact-list dt,
+.degree-list h3 {
+  font-weight: bold;
+  color: #3f6fb6;
+}
+
+.column-item-title::before {
+  content: "";
+  position: relative;
+  bottom: -20px;
+
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  border: 3px solid #FFF;
+  border-radius: 30px;
+
+  background-color: #3f6fb6;
+  box-shadow: 0 0 2px #3f6fb6;
+
+}
+
+.contact-list dt,
+.contact-list dd {
+  display: inline-block;
+  margin: 0;
+  margin-top: 15px;
+  width: 180px;
+
+  font-weight: bold;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-list a:hover {
+  color: #3f6fb6;
+}
+
+
+/* temp*/
+.column-item-avatar {
+  width: 180px;
+  height: 470px;
+}
+
+/*
+ .circle-big {
+  display: inline-block;
+  background-color: #3f6fb6;
+  border: 3px solid #FFF;
+  border-radius: 30px;
+  box-shadow: 0 0 2px #3f6fb6;
+  height: 50px;
+  width: 50px;
+}
+*/
