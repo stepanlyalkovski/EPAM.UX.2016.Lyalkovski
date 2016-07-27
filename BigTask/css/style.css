@@ -39,6 +39,10 @@ time {
   color: #3f6fb6;
 }
 
+.column-item-title{
+  font-size: 25px;
+}
+
 .column-item-title::before {
   content: "";
   position: relative;
