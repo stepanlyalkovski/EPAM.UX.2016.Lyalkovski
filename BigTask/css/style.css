@@ -54,28 +54,30 @@ h4 {
 }
 
 .main-title {
-  margin-top: 0;
+  width: 94%;
   font-size: 54px;
   text-align: center;
+  line-height: 53px;
 }
 
 .main-title-name {
-
   font-weight: normal;
 }
 
 .main-title-surname {
-  font-size:50px;
+  font-size: 59px;
 }
 
 .main-title-speciality {
-    display: block;
-  font-size: 25px;
+  display: block;
+  font-size: 23px;
 }
 
 .column-item {
-  width: 97%;
+  width: 100%;
   margin: 0 auto;
+  margin-bottom: 58px;
+  margin-top: 26px;
 }
 
 .column-item-title,
@@ -87,17 +89,30 @@ h4 {
 
 .column-item-title {
   display: inline-block;
-  font-size: 39px
+  font-size: 39px;
+  margin-top: 15px;
+  margin-left: 6px;
+  vertical-align: top;
 }
 
 .column-item p {
   font-size: 15px;
+  margin-top: 8px;
+}
+
+.colum-item-wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 32%;
+  height: 5px;
+  vertical-align: top;
+  margin-top: 34px;
+  margin-left: 4px;
+  background-color: #006cb4;
 }
 
 .icon::before {
   content: "";
-  position: relative;
-  top: 15px;
   height: 75px;
   width: 75px;
   background: url(../img/sprite.png);
@@ -106,6 +121,8 @@ h4 {
   margin-right: 10px;
   border: 3px solid #FFF;
   border-radius: 30px;
+  position: relative;
+  top: 15px;
 
   background-color: #006cb4;
   box-shadow: 0 0 2px #006cb4;
@@ -137,26 +154,26 @@ h4 {
 }
 
 .icon-educaton::before {
-    width: 74px;
-    height: 72px;
-    background-position: -10px -10px;
+  width: 74px;
+  height: 72px;
+  background-position: -10px -10px;
 }
 
 .icon-experience::before {
-    width: 77px;
-    height: 74px;
-    background-position: -10px -102px;
+  width: 77px;
+  height: 74px;
+  background-position: -10px -102px;
 }
 
 .icon-freepik-logo {
-    width: 368px;
-    height: 38px;
-    background-position: -10px -196px;
+  width: 368px;
+  height: 38px;
+  background-position: -10px -196px;
 }
 
 .degree-list-title,
 .experience-list-title {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 25px;
 }
 
@@ -171,18 +188,40 @@ h4 {
   font-weight: bold;
 }
 
+.skills-list-title {
+  display: inline-block;
+}
+
+.degree-list {
+  margin-top: 23px;
+  padding-left: 53px;
+}
+
 .degree-list h4 {
   margin-top: 2px;
   font-size: 22px;
 }
+
 .contact-list dt,
 .contact-list dd {
   display: inline-block;
+  width: 40%;
   margin: 0;
-  margin-top: 15px;
-  width: 180px;
+  padding: 2%;
 
+  font-size: 21px;
   font-weight: bold;
+}
+
+.contact-list dt {
+  width: 24%;
+  padding-top: 21px;
+}
+
+.contact-list dd {
+  font-size: 18px;
+  width: 67%;
+  padding-left: 0;
 }
 
 .contact-list a {
@@ -234,11 +273,13 @@ h4 {
   display: inline-block;
   margin-right: 20px;
 }
+
 .progress-dotted::after {
   content: "";
   display: table;
   clear: both;
 }
+
 .progress-dotted li{
   float: left;
   width: 15px;
