@@ -22,10 +22,6 @@ time {
   text-transform: none;
 }
 
-h4 {
-  display: inline-block;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1240px;
@@ -96,6 +92,8 @@ h4 {
 }
 
 .column-item p {
+  width: 83%;
+
   font-size: 15px;
   margin-top: 8px;
 }
@@ -179,27 +177,9 @@ h4 {
 
 .skills-list li,
 .degree-list li,
-.software-list li {
+.software-list li,
+.experience-list li {
   list-style-type: none;
-}
-
-.skills-list {
-  text-align: center;
-  font-weight: bold;
-}
-
-.skills-list-title {
-  display: inline-block;
-}
-
-.degree-list {
-  margin-top: 23px;
-  padding-left: 53px;
-}
-
-.degree-list h4 {
-  margin-top: 2px;
-  font-size: 22px;
 }
 
 .contact-list dt,
@@ -211,6 +191,18 @@ h4 {
 
   font-size: 21px;
   font-weight: bold;
+}
+
+.degree-list h4,
+.experience-list h4 {
+  margin-top: 2px;
+  font-size: 22px;
+}
+
+.degree-list-title,
+.experience-list-title {
+  display: inline-block;
+  margin-right: 9px;
 }
 
 .contact-list dt {
@@ -233,6 +225,44 @@ h4 {
   color: #3f6fb6;
 }
 
+.degree-list {
+  margin-top: 23px;
+  padding-left: 53px;
+}
+
+.degree-list-date {
+  font-size: 25px;
+}
+
+.experience-list {
+  margin-top: 32px;
+  padding-left: 53px;
+}
+
+.skills-list {
+  text-align: center;
+  font-weight: bold;
+}
+
+.skills-list-title {
+  display: inline-block;
+}
+
+.software-list {
+  margin-top: 18px;
+  padding-left: 7px;
+}
+
+.software-list .layout-column {
+  width: 47.5%;
+}
+
+.software-list h4 {
+  margin-bottom: 14px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
 .column-item-avatar {
   width: 56%;
   margin: 40px auto;
@@ -251,8 +281,9 @@ h4 {
 }
 
 .progress {
-  height: 20px;
-  margin-bottom: 20px;
+  height: 22px;
+  width: 78%;
+  margin-bottom: 22px;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
@@ -290,11 +321,11 @@ h4 {
   background-color: rgba(192,192,192,.5)
 }
 
-.software-list .layout-column:first-child {
-  width: 48%;
-  margin-right:2%;
-}
-
 .progress-dotted .active {
    background: #006cb4;
+}
+
+.design-logo {
+  width: 89%;
+  text-align: center;
 }
