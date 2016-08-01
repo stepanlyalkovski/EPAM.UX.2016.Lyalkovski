@@ -24,8 +24,9 @@ time {
 
 .container {
   margin: 0 auto;
-  max-width: 1240px;
   min-width: 660px;
+  padding-left: 4%;
+  padding-right: 4%;
   padding-top: 39px;
 }
 
@@ -37,7 +38,6 @@ time {
 
 .layout-column {
   float: left;
-  width: 50%;
 }
 
 .layout-column-left {
@@ -69,6 +69,10 @@ time {
   font-size: 23px;
 }
 
+.layout-column .column-item:last-child {
+  margin-bottom: 0;
+}
+
 .column-item {
   width: 100%;
   margin: 0 auto;
@@ -96,6 +100,14 @@ time {
 
   font-size: 15px;
   margin-top: 8px;
+}
+
+.column-item-profile {
+  margin-bottom: 38px;
+}
+
+.column-item-contact {
+  margin-bottom: 35px;
 }
 
 .colum-item-wrapper::after {
@@ -205,6 +217,11 @@ time {
   margin-right: 9px;
 }
 
+.contact-list {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
 .contact-list dt {
   width: 24%;
   padding-top: 21px;
@@ -240,6 +257,9 @@ time {
 }
 
 .skills-list {
+  margin-top: 23px;
+  padding-left: 11px;
+
   text-align: center;
   font-weight: bold;
 }
@@ -264,9 +284,13 @@ time {
 }
 
 .column-item-avatar {
-  width: 56%;
+  width: 54%;
   margin: 40px auto;
   margin-bottom: 25px;
+}
+
+.column-item-profile {
+  margin-bottom: 36px;
 }
 
 .circle-big {
@@ -313,12 +337,12 @@ time {
 
 .progress-dotted li{
   float: left;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
   border: 1px solid #fff;
   border-radius: 50%;
-  background-color: rgba(192,192,192,.5)
+  background-color: rgba(192,192,192,.5);
 }
 
 .progress-dotted .active {
