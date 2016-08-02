@@ -1,0 +1,81 @@
+.container {
+	border: 1px solid black;
+}
+
+.containter tr {
+	border: 1px solid black;
+	height: 200px;
+	background-color: gray;
+}			
+
+.navigation {
+	background-color: gray;
+	border-collapse: collapse;
+}
+
+.layout-column-left {
+	vertical-align: top;
+}
+
+.layout-column-left ul{
+	list-style-type: none;
+	color: white;
+	background-color: black;
+}
+.layout-column-left li {
+	padding: 20px;
+	
+}
+/* 	<table class="container">
+	<tr class="header">
+		<td></td>
+		<td>Epam systems</td>
+		</tr>
+		<tr>
+			<td>About UI Lab</td>
+			<td>Home Tasks</td>
+			<td>Test & Exams</td>
+		</tr>
+		<tr class="main">
+			<table>
+			<td class="layout-column-left"> 
+				<tr>
+					<td>Vertical navigation sample</td>
+				</tr>
+				<tr>
+					<td>Vertical navigation sample</td>
+				</tr>
+				<tr>
+					<td>Vertical navigation sample</td>
+				</tr>
+				<tr>
+					<td>Vertical navigation sample</td>
+				</tr>
+				<tr>
+					<td>Vertical navigation sample</td>
+				</tr>
+				<tr>
+					<td>Vertical navigation sample</td>
+				</tr>
+			</td>
+			<td class="layout-column-right">
+				<table>
+					<tr>
+						<td><h2>Level 1</h2></td>
+						<td>bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla</td>
+					</tr>
+					<tr>
+						<td><h2>Level 2</h2></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><h2>Level 3</h2></td>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+			</table>
+		</tr>
+		<tr></tr>
+		
+	</table>*/
