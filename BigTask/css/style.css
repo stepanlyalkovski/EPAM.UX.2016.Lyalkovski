@@ -1,5 +1,8 @@
 body {
+
   font-family: 'Droid Sans', sans-serif;
+
+  background-color: white;
 }
 /* PT Sans */
 h2,
@@ -23,11 +26,9 @@ time {
 }
 
 .container {
+  max-width: 1240px;
   margin: 0 auto;
-  min-width: 660px;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 39px;
+  padding-top: 43px;
 }
 
 .clearfix::after {
@@ -57,11 +58,17 @@ time {
 }
 
 .main-title-name {
+  display: block;
   font-weight: normal;
 }
 
 .main-title-surname {
   font-size: 59px;
+}
+
+.main-title-name,
+.main-title-surname {
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .main-title-speciality {
@@ -75,9 +82,35 @@ time {
 
 .column-item {
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 58px;
-  margin-top: 26px;
+  margin: 30px auto;
+  margin-bottom: 61px;
+}
+
+.column-item-education {
+  margin-bottom: 50px;
+}
+
+.column-item-education .colum-item-wrapper::after {
+  width: 43%;
+}
+
+.column-item-experience .colum-item-wrapper::after {
+  width: 41%;
+}
+
+.column-item-software .colum-item-wrapper::after {
+  width: 46%;
+}
+
+
+
+.column-item-experience {
+  margin-bottom: 50px;
+}
+
+.column-item-skills .colum-item-wrapper::after{
+  width: 42%;
+  margin-left: 2%;
 }
 
 .column-item-title,
@@ -97,13 +130,20 @@ time {
 
 .column-item p {
   width: 83%;
-
-  font-size: 15px;
   margin-top: 8px;
+  margin-bottom: 13px;
+  font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
+
 }
 
 .column-item-profile {
   margin-bottom: 38px;
+  padding-left: 1.5%;
+}
+
+.column-item-profile p {
+  width: 90%;
 }
 
 .column-item-contact {
@@ -119,6 +159,10 @@ time {
   margin-top: 34px;
   margin-left: 4px;
   background-color: #006cb4;
+}
+
+.column-item-profile .colum-item-wrapper::after{
+  width: 35%;
 }
 
 .icon::before {
@@ -214,7 +258,7 @@ time {
 .degree-list-title,
 .experience-list-title {
   display: inline-block;
-  margin-right: 9px;
+  margin-right: 1%;
 }
 
 .contact-list {
@@ -252,8 +296,8 @@ time {
 }
 
 .experience-list {
-  margin-top: 32px;
-  padding-left: 53px;
+  margin-top: 35px;
+  padding-left: 7%;
 }
 
 .skills-list {
@@ -265,12 +309,21 @@ time {
 }
 
 .skills-list-title {
-  display: inline-block;
+  display: block;
+  width: 89%;
+  margin-bottom: 13px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.progress-dotted {
+  margin-bottom: 15px;
 }
 
 .software-list {
-  margin-top: 18px;
-  padding-left: 7px;
+  margin-top: 22px;
+  padding-left: 1%;
+  margin-bottom: 4px;
 }
 
 .software-list .layout-column {
@@ -285,7 +338,7 @@ time {
 
 .column-item-avatar {
   width: 54%;
-  margin: 40px auto;
+  margin: 45px auto;
   margin-bottom: 25px;
 }
 
@@ -352,4 +405,21 @@ time {
 .design-logo {
   width: 89%;
   text-align: center;
+}
+
+@media (max-width: 760px) {
+
+  body {
+    min-width: 400px;
+  }
+
+  .layout-column {
+    width: auto;
+    float: none;
+  }
+
+  .colum-item-wrapper::after {
+    content: none;
+  }
+
 }
