@@ -1,17 +1,37 @@
 body {
+  position: relative;
 
   font-family: 'Droid Sans', sans-serif;
-
   background-color: white;
 }
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 /* PT Sans */
 h2,
 h3,
 li,
 dt,
-.main-title {
+.main-title,
+.profile-form {
   text-transform: uppercase;
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 
 h1,
 h2,
@@ -29,6 +49,7 @@ time {
   max-width: 1240px;
   margin: 0 auto;
   padding-top: 43px;
+  padding-bottom: 40px;
 }
 
 .clearfix::after {
@@ -169,8 +190,10 @@ time {
   content: "";
   height: 75px;
   width: 75px;
+  margin-right: 1%;
   background: url(../img/sprite.png);
   display: inline-block;
+
   /*
   margin-right: 10px;
   border: 3px solid #FFF;
@@ -259,6 +282,7 @@ time {
 .experience-list-title {
   display: inline-block;
   margin-right: 1%;
+  vertical-align: top;
 }
 
 .contact-list {
@@ -293,6 +317,11 @@ time {
 
 .degree-list-date {
   font-size: 25px;
+}
+
+.degree-list-date,
+.degree-list-date time {
+  vertical-align: top;
 }
 
 .experience-list {
@@ -343,7 +372,7 @@ time {
 }
 
 .column-item-profile {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 .circle-big {
@@ -407,7 +436,7 @@ time {
   text-align: center;
 }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) {
 
   body {
     min-width: 400px;
@@ -422,4 +451,90 @@ time {
     content: none;
   }
 
+}
+
+
+#test::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  border: 3px solid #FFF;
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+  background: url(../temp-files/icon.png);
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #006cb4;
+  box-shadow: 0 0 0 1px #006cb4;
+}
+
+.degree-list li,
+.experience-list li {
+  position: relative;
+}
+
+.degree-list li::before,
+.experience-list li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -42px;
+  top: 2px;
+  border: 3px solid #FFF;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  max-width: 1240px;
+
+}
+
+.contact-list {
+  display: none;
+}
+
+.profile-form {
+  margin-top: 16px;
+  padding-left: 2.5%;
+
+  font-size: 0; /* for inline-block spacing */
+}
+
+.profile-form-item {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.profile-form input {
+  font-size: 18px;
+}
+
+.profile-form label {
+  font-size: 21px;
+  font-weight: bold;
+  color: #006cb4;
+}
+
+.profile-form-item label {
+  width: 27%;
+  display: inline-block;
+}
+
+.profile-form-item input {
+  border: 0;
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
 }
