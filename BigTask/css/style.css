@@ -31,6 +31,12 @@ p {
   text-overflow: ellipsis;
 }
 
+.test-container {
+width: 80%;
+margin: 0 auto;
+}
+
+
 
 
 h1,
@@ -105,6 +111,12 @@ time {
   width: 100%;
   margin: 30px auto;
   margin-bottom: 61px;
+
+  overflow: hidden;
+}
+
+.column-item-wrapper {
+  padding-top: 1px;
 }
 
 .column-item-education {
@@ -142,10 +154,11 @@ time {
 }
 
 .column-item-title {
-  display: inline-block;
+  float: left;
   font-size: 39px;
+  max-width: 77.5%;
   margin-top: 15px;
-  margin-left: 6px;
+  margin-right: 2.6%;
   vertical-align: top;
 }
 
@@ -171,6 +184,25 @@ time {
   margin-bottom: 35px;
 }
 
+.colum-item-wrapper {
+  padding-top: 1px;
+  padding-right: 12%;
+  padding-left: 0.1%;
+}
+
+
+.block-line {
+  display: block;
+  height: 5px;
+  margin-top: 34px;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: #006cb4;
+}
+
+
+
+/*
 .colum-item-wrapper::after {
   content: "";
   display: inline-block;
@@ -181,6 +213,8 @@ time {
   margin-left: 4px;
   background-color: #006cb4;
 }
+*/
+
 
 .column-item-profile .colum-item-wrapper::after{
   width: 35%;
@@ -188,11 +222,17 @@ time {
 
 .icon::before {
   content: "";
-  height: 75px;
-  width: 75px;
+  float: left;
+  height: 66px;
+  width: 66px;
   margin-right: 1%;
-  background: url(../img/sprite.png);
-  display: inline-block;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #006cb4;
+  box-shadow: 0 0 0 1px #006cb4;
 
   /*
   margin-right: 10px;
@@ -207,40 +247,61 @@ time {
 }
 
 .icon-profile::before {
-    width: 74px;
-    height: 72px;
-    background-position: -10px -346px;
+  background-image: url(../img/icon.png)
 }
 
 .icon-phone::before {
     width: 72px;
     height: 72px;
-    background-position: -10px -254px;
+    background-image: url(../img/contact.png);
 }
 
 .icon-skills::before {
-    width: 72px;
-    height: 72px;
-    background-position: -10px -438px;
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/skills.png);
+  background-size: 44% 64%;
 }
 
 .icon-software::before {
-    width: 74px;
-    height: 72px;
-    background-position: -10px -530px;
+  width: 74px;
+  height: 72px;
+  background-image: url(../img/software.png);
 }
 
 .icon-educaton::before {
   width: 74px;
   height: 72px;
-  background-position: -10px -10px;
+  background-image: url(..//img/education.png);
+  background-size: 65% 65%;
 }
 
 .icon-experience::before {
   width: 77px;
   height: 74px;
-  background-position: -10px -102px;
+  background-image: url(../img/experience.png);
 }
+
+#test::before {
+  content: "";
+
+
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+
+  background-image: url(../img/icon.png);
+}
+
+
+
+
+
+
+
+
+
+
 
 .icon-freepik-logo {
   width: 368px;
@@ -381,7 +442,7 @@ time {
   width: 204px;
   margin-right: 0px;
   border: 13px solid #FFF;
-  border-radius: 153px;
+  border-radius: 50%;
   background-color: #006cb4;
   box-shadow: 0 0 0px 1px #006cb4;
 }
@@ -436,39 +497,41 @@ time {
   text-align: center;
 }
 
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 850px) {
 
   body {
     min-width: 400px;
   }
 
-  .layout-column {
+  .layout-column,
+  .software-list .layout-column {
     width: auto;
     float: none;
   }
 
-  .colum-item-wrapper::after {
-    content: none;
+  .block-line {
+    display: none;
   }
 
+  .colum-item-wrapper {
+    text-align: center;
+    padding: 0;
+    padding-top: 1px;
+    margin: 0 auto;
+  }
+
+  .column-item-title,
+  .icon::before {
+    display: inline-block;
+    float: none;
+  }
+
+  .column-item p {
+    text-align: center;
+  }
 }
 
-
-#test::before {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  border: 3px solid #FFF;
-  height: 66px;
-  width: 66px;
-  border-radius: 50%;
-  background: url(../temp-files/icon.png);
-  background-size: 50% 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #006cb4;
-  box-shadow: 0 0 0 1px #006cb4;
-}
 
 .degree-list li,
 .experience-list li {
@@ -528,8 +591,10 @@ footer {
 }
 
 .profile-form-item label {
-  width: 27%;
   display: inline-block;
+  width: 27%;
+  padding-right: 3%;
+
 }
 
 .profile-form-item input {

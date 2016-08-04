@@ -110,13 +110,11 @@ time {
 .column-item:nth-child(2n){
   width: 60%;
   float:right;
-  background-color: orange;
 }
 
 .column-item:nth-child(2n+1){
   width: 38%;
   float:left;
-  background-color: green;
 }
 
 
@@ -179,6 +177,19 @@ time {
   margin-bottom: 35px;
 }
 
+.block-line {
+  display: inline-block;
+  width: 32%;
+  height: 5px;
+  vertical-align: top;
+  margin-top: 34px;
+  margin-left: 4px;
+  background-color: #006cb4;
+}
+
+
+
+/*
 .colum-item-wrapper::after {
   content: "";
   display: inline-block;
@@ -189,6 +200,8 @@ time {
   margin-left: 4px;
   background-color: #006cb4;
 }
+*/
+
 
 .column-item-profile .colum-item-wrapper::after{
   width: 35%;
