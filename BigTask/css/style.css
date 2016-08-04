@@ -18,7 +18,8 @@ h3,
 li,
 dt,
 .main-title,
-.profile-form {
+.profile-form,
+.software-list h4{
   text-transform: uppercase;
 }
 
@@ -292,16 +293,6 @@ time {
 
   background-image: url(../img/icon.png);
 }
-
-
-
-
-
-
-
-
-
-
 
 .icon-freepik-logo {
   width: 368px;
