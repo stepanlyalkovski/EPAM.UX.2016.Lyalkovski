@@ -27,7 +27,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+.degree-list-date {
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -188,7 +189,7 @@ time {
 .colum-item-wrapper {
   padding-top: 1px;
   padding-right: 12%;
-  padding-left: 0.1%;
+  padding-left: 0.7%
 }
 
 
@@ -334,6 +335,7 @@ time {
 .experience-list-title {
   display: inline-block;
   margin-right: 1%;
+  max-width: 45%;
   vertical-align: top;
 }
 
@@ -368,6 +370,9 @@ time {
 }
 
 .degree-list-date {
+  display: inline-block;
+  max-width: 40%;
+
   font-size: 25px;
 }
 
@@ -489,7 +494,7 @@ time {
 }
 
 
-@media screen and (max-width: 850px) {
+@media all and (max-width: 850px) {
 
   body {
     min-width: 400px;
@@ -521,6 +526,14 @@ time {
   .column-item p {
     text-align: center;
   }
+
+  .degree-list-title,
+  .degree-list-date  {
+    display: block;
+    max-width: 100%;
+  }
+
+
 }
 
 
