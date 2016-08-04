@@ -335,7 +335,7 @@ time {
 .experience-list-title {
   display: inline-block;
   margin-right: 1%;
-  max-width: 45%;
+  max-width: 60%;
   vertical-align: top;
 }
 
@@ -371,7 +371,7 @@ time {
 
 .degree-list-date {
   display: inline-block;
-  max-width: 40%;
+  max-width: 38%;
 
   font-size: 25px;
 }
@@ -489,53 +489,10 @@ time {
 }
 
 .design-logo {
-  width: 89%;
+  width: 90%;
+  margin: auto;
   text-align: center;
 }
-
-
-@media all and (max-width: 850px) {
-
-  body {
-    min-width: 400px;
-  }
-
-  .layout-column,
-  .software-list .layout-column {
-    width: auto;
-    float: none;
-  }
-
-  .block-line {
-    display: none;
-  }
-
-  .colum-item-wrapper {
-    text-align: center;
-    padding: 0;
-    padding-top: 1px;
-    margin: 0 auto;
-  }
-
-  .column-item-title,
-  .icon::before {
-    display: inline-block;
-    float: none;
-  }
-
-  .column-item p {
-    text-align: center;
-  }
-
-  .degree-list-title,
-  .degree-list-date  {
-    display: block;
-    max-width: 100%;
-  }
-
-
-}
-
 
 .degree-list li,
 .experience-list li {
@@ -603,7 +560,74 @@ footer {
 
 .profile-form-item input {
   border: 0;
-  width: 50%;
+  max-width: 70%;
   font-size: 18px;
   font-weight: bold;
+}
+
+
+@media all and (max-width: 850px) {
+
+  body {
+    min-width: 400px;
+  }
+
+  .layout-column,
+  .software-list .layout-column {
+    width: auto;
+    float: none;
+  }
+
+  .block-line {
+    display: none;
+  }
+
+  .colum-item-wrapper {
+    text-align: center;
+    padding: 0;
+    padding-top: 1px;
+    margin: 0 auto;
+  }
+
+  .column-item-title,
+  .icon::before {
+    display: inline-block;
+    float: none;
+  }
+
+  .column-item p {
+    text-align: center;
+    width: 95%;
+    margin: 8px auto;
+    margin-bottom: 13px;
+  }
+
+  .degree-list-title,
+  .degree-list-date,
+  .experience-list-title,
+  .experience-list-date  {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+
+    .degree-list h4,
+    .experience-list h4 {
+    text-align: center;
+  }
+
+  .degree-list li::before,
+  .experience-list li::before {
+    content: none;
+  }
+
+  .progress-dotted {
+    display: inline-block;
+  }
+
+  .skills-list-title {
+    width: 90%;
+    margin: auto;
+  }
+
 }
