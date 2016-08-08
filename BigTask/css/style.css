@@ -329,7 +329,7 @@ time {
 
 .degree-list {
   margin-top: 23px;
-  padding-left: 53px;
+  padding-left: 7.6%;
 }
 
 .degree-list-date {
@@ -572,6 +572,13 @@ footer {
     .degree-list h4,
     .experience-list h4 {
     text-align: center;
+  }
+
+  .degree-list,
+  .experience-list {
+    width: 80%;
+    padding-left: 0;
+    margin: auto;
   }
 
   .degree-list li::before,
