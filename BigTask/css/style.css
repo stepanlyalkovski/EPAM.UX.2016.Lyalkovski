@@ -118,7 +118,7 @@ time {
 }
 
 .column-item-education {
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .column-item-education .colum-item-wrapper::after {
@@ -134,7 +134,7 @@ time {
 }
 
 .column-item-experience {
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .column-item-skills .colum-item-wrapper::after{
@@ -167,7 +167,7 @@ time {
 }
 
 .column-item-profile {
-  margin-bottom: 38px;
+  margin-bottom: 0;
   padding-left: 1.5%;
 }
 
@@ -386,13 +386,9 @@ time {
 }
 
 .column-item-avatar {
-  margin: 45px auto;
+  margin: 20px auto;
   margin-bottom: 25px;
   text-align: center;
-}
-
-.column-item-profile {
-  margin-bottom: 40px;
 }
 
 .circle-big {
