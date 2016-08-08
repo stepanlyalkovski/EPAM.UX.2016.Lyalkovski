@@ -1,0 +1,249 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  position: relative;
+  font-family: 'Droid Sans', sans-serif;
+  background-color: white;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+.degree-list-date {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.column-item {
+  margin: 30px auto;
+  margin-bottom: 61px;
+  overflow: hidden;
+}
+h2,
+h3,
+li,
+dt,
+.main-title,
+.profile-form {
+  text-transform: uppercase;
+}
+h3,
+h4 {
+  margin: 0;
+}
+.software-list h4 {
+  text-transform: uppercase;
+}
+p,
+time {
+  text-transform: none;
+}
+.main-title {
+  text-align: center;
+  line-height: 53px;
+}
+.main-title-surname {
+  font-size: 59px;
+}
+.main-title-name,
+.main-title-surname,
+.column-item-title {
+  font-family: 'Droid Sans', sans-serif;
+}
+.main-title {
+  font-size: 54px;
+  text-align: center;
+  line-height: 53px;
+}
+.main-title-speciality {
+  font-size: 23px;
+}
+.column-item-title {
+  font-weight: bold;
+  color: #006cb4;
+}
+.contact-list dt {
+  font-weight: bold;
+  color: #006cb4;
+}
+.degree-list-title {
+  font-weight: bold;
+  color: #006cb4;
+}
+.column-item p {
+  font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
+}
+.column-item-title {
+  font-size: 39px;
+  vertical-align: top;
+}
+.degree-list-title,
+.experience-list-title {
+  font-size: 25px;
+}
+.contact-list .contact-list dt,
+.contact-list .contact-list dd {
+  font-size: 21px;
+  font-weight: bold;
+}
+.degree-list h4 {
+  font-size: 22px;
+}
+.experience-list h4 {
+  font-size: 22px;
+}
+.degree-list-date {
+  font-size: 25px;
+}
+.software-list h4 {
+  font-size: 22px;
+}
+.software-list h4 {
+  font-weight: normal;
+}
+.skills-list li,
+.degree-list li,
+.software-list li,
+.experience-list li {
+  list-style-type: none;
+}
+.skills-list {
+  text-align: center;
+}
+.skills-list-title {
+  font-size: 24px;
+}
+.progress-dotted::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.progress-dotted li {
+  float: left;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  border: 1px solid #fff;
+  background: #006cb4;
+}
+.block-line {
+  display: block;
+  height: 5px;
+  margin-top: 34px;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: #006cb4;
+}
+.circle-big {
+  display: inline-block;
+  height: 204px;
+  width: 204px;
+  margin-right: 0;
+  border: 13px solid #FFF;
+  border-radius: 50%;
+  background-color: #006cb4;
+  box-shadow: 0 0 0px 1px #006cb4;
+}
+.icon::before {
+  content: "";
+  float: left;
+  display: inline-block;
+  height: 66px;
+  width: 66px;
+  margin-right: 0;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  background-color: #006cb4;
+  box-shadow: 0 0 0px 1px #006cb4;
+  margin-right: 1%;
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-skills::before {
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/skills.png);
+  background-size: 44% 64%;
+}
+.icon-software::before {
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/software.png);
+}
+.icon-educaton::before {
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/education.png);
+  background-size: 65% 65%;
+}
+.icon-experience::before {
+  width: 77px;
+  height: 74px;
+  background-image: url(../img/experience.png);
+}
+.icon-profile::before {
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/icon.png);
+}
+.icon-phone::before {
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/contact.png);
+}
+.colum-item-wrapper {
+  padding-top: 1px;
+}
+.block-line {
+  display: block;
+  height: 5px;
+  margin-top: 32px;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: #006cb4;
+}
+.column-item {
+  margin: 30px auto;
+  margin-bottom: 61px;
+  overflow: hidden;
+}
+.column-item-title {
+  float: left;
+  max-width: 77.5%;
+  margin: 9px 2% 0 1%;
+}
+.main-title-name {
+  display: block;
+}
+.main-title-speciality {
+  display: block;
+}
+.degree-list-title,
+.experience-list-title {
+  display: inline-block;
+  margin-right: 1%;
+  max-width: 60%;
+  vertical-align: top;
+}
+.degree-list li,
+.experience-list li {
+  position: relative;
+}
+.degree-list li::before,
+.experience-list li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -42px;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}

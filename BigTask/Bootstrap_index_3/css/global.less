@@ -1,0 +1,30 @@
+@main-color: color("#006cb4");
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+body {
+  position: relative;
+  font-family: @font-header;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+.degree-list-date {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.column-item {
+  margin: 30px auto;
+  margin-bottom: 61px;
+  overflow: hidden;
+}

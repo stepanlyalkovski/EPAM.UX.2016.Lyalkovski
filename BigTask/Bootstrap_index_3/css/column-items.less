@@ -1,0 +1,56 @@
+.block-item() {
+  display: block;
+}
+
+.list-style(@size, @background-color, @border,  @border-radius) {
+  width: @size;
+  height: @size;
+  background-color: @background-color;
+  border-radius: @border-radius;
+}
+
+
+
+.column-item {
+  margin: 30px auto;
+  margin-bottom: 61px;
+  overflow: hidden;
+}
+
+.column-item-title {
+  float: left;
+  max-width: 77.5%;
+  margin: 9px 2% 0 1%;
+}
+
+.main-title-name {
+  .block-item;
+}
+
+.main-title-speciality {
+  .block-item;
+}
+
+.degree-list-title,
+.experience-list-title {
+  display: inline-block;
+  margin-right: 1%;
+  max-width: 60%;
+  vertical-align: top;
+}
+
+.degree-list,
+.experience-list{
+  li {
+    position: relative;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: -42px;
+      top: 7px;
+      .list-style(20px, black, 3px solid #FFF, 50%);
+    }
+  }
+
+}
