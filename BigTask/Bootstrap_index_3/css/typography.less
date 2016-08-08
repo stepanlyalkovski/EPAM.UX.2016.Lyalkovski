@@ -2,7 +2,7 @@
 @font-p: 'PT Sans', sans-serif;
 @title-font: 54px;
 @font-list-titles: 25px;
-
+@font-size-p: 15px;
 
 h2,
 h3,
@@ -31,7 +31,7 @@ time {
 
 .main-title {
   text-align: center;
-  line-height: 53px;
+  line-height: @title-font;
 }
 
 .main-title-surname {
@@ -45,13 +45,13 @@ time {
 }
 
 .main-title {
-  font-size: 54px;
+  font-size: @title-font;
   text-align: center;
-  line-height: 53px;
+  line-height: @title-font;
 }
 
 .main-title-speciality {
-  font-size: 23px;
+  font-size: @font-list-titles - 2;
 }
 
 .column-item-title {
@@ -68,7 +68,7 @@ time {
 
 .column-item {
   p {
-  font-size: 15px;
+  font-size: @font-size-p;
   font-family: 'PT Sans', sans-serif;
   }
 }
@@ -83,12 +83,17 @@ time {
   font-size: @font-list-titles;
 }
 
-.contact-list
 .contact-list {
   dt, dd {
-    font-size: 21px;
+    font-size: @font-list-titles - 4;
     font-weight: bold;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
 }
 
 .degree-list {
@@ -125,5 +130,5 @@ time {
 }
 
 .skills-list-title {
-  font-size: 24px;
+  font-size: @font-list-titles - 1;
 }

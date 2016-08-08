@@ -1,9 +1,10 @@
+@default-progress-color: gray;
 .progress-dotted {
   .clearfix;
   li {
-    .progress-circle(18px, 7px, 1px solid #fff, @main-color);
+    .progress-circle(18px, 7px, 1px solid #fff, @default-progress-color);
   }
   .active {
-
+    background-color: @main-color;
   }
 }

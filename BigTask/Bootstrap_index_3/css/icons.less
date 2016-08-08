@@ -1,5 +1,6 @@
 .circle(@size, @border, @background-color)  {
   display: inline-block;
+  box-sizing: content-box;
   height: @size;
   width: @size;
   margin-right: 0;
@@ -80,9 +81,7 @@
   background-image: url(../img/contact.png);
 }
 
-.colum-item-wrapper {
-  padding-top: 1px;
-}
+
 
 .block-line {
   .line(5px, @main-color);
