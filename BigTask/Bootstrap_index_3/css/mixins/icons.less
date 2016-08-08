@@ -1,0 +1,25 @@
+.circle(@size, @border, @background-color)  {
+  display: inline-block;
+  box-sizing: content-box;
+  height: @size;
+  width: @size;
+  margin-right: 0;
+  border: @border;
+  border-radius: 50%;
+  background-color: @background-color;
+  box-shadow: 0 0 0px 1px @background-color;
+}
+
+.line(@height, @background-color) {
+  display: block;
+  height: @height;
+  margin-top: 32px;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: @background-color;
+}
+
+.icon-size(@width:72px, @height:72px) {
+  width: @width;
+  height: @height;
+}

@@ -4,7 +4,6 @@
   clear: both;
 }
 body {
-  font-family: 'Droid Sans', sans-serif;
   background-color: white;
 }
 h1,
@@ -33,6 +32,9 @@ footer {
 body > .container {
   padding-top: 20px;
 }
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
 h2,
 h3,
 li,
@@ -41,12 +43,12 @@ dt,
 .profile-form {
   text-transform: uppercase;
 }
+.software-list h4 {
+  text-transform: uppercase;
+}
 h3,
 h4 {
   margin: 0;
-}
-.software-list h4 {
-  text-transform: uppercase;
 }
 p,
 time {
@@ -188,34 +190,34 @@ time {
 .icon-skills::before {
   width: 72px;
   height: 72px;
-  background-image: url(../img/skills.png);
+  background-image: url("../img/skills.png");
   background-size: 44% 64%;
 }
 .icon-software::before {
   width: 72px;
   height: 72px;
-  background-image: url(../img/software.png);
+  background-image: url("../img/software.png");
 }
 .icon-educaton::before {
   width: 72px;
   height: 72px;
-  background-image: url(../img/education.png);
+  background-image: url("../img/education.png");
   background-size: 65% 65%;
 }
 .icon-experience::before {
   width: 77px;
   height: 74px;
-  background-image: url(../img/experience.png);
+  background-image: url("../img/experience.png");
 }
 .icon-profile::before {
   width: 72px;
   height: 72px;
-  background-image: url(../img/icon.png);
+  background-image: url("../img/icon.png");
 }
 .icon-phone::before {
   width: 72px;
   height: 72px;
-  background-image: url(../img/contact.png);
+  background-image: url("../img/contact.png");
 }
 .block-line {
   display: block;
@@ -322,7 +324,7 @@ time {
 }
 .contact-list dt {
   display: inline-block;
-  width: 24%;
+  width: 29%;
   margin: 0;
   padding: 2%;
   padding-top: 21px;

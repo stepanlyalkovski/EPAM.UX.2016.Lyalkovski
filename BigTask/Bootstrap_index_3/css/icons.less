@@ -1,23 +1,4 @@
-.circle(@size, @border, @background-color)  {
-  display: inline-block;
-  box-sizing: content-box;
-  height: @size;
-  width: @size;
-  margin-right: 0;
-  border: @border;
-  border-radius: 50%;
-  background-color: @background-color;
-  box-shadow: 0 0 0px 1px @background-color;
-}
-
-.line(@height, @background-color) {
-  display: block;
-  height: @height;
-  margin-top: 32px;
-  vertical-align: top;
-  overflow: hidden;
-  background-color: @background-color;
-}
+@images: "../img/";
 
 .block-line {
   display: block;
@@ -26,11 +7,6 @@
   vertical-align: top;
   overflow: hidden;
   background-color: #006cb4;
-}
-
-.icon-size(@width:72px, @height:72px) {
-  width: @width;
-  height: @height;
 }
 
 .circle-big {
@@ -51,37 +27,35 @@
 
 .icon-skills::before {
   .icon-size;
-  background-image: url(../img/skills.png);
+  background-image: url("@{images}skills.png");
   background-size: 44% 64%;
 }
 
 .icon-software::before {
  .icon-size;
-  background-image: url(../img/software.png);
+  background-image: url("@{images}software.png");
 }
 
 .icon-educaton::before {
   .icon-size;
-  background-image: url(../img/education.png);
+  background-image: url("@{images}education.png");
   background-size: 65% 65%;
 }
 
 .icon-experience::before {
   .icon-size(77px, 74px);
-  background-image: url(../img/experience.png);
+  background-image: url("@{images}experience.png");
 }
 
 .icon-profile::before {
   .icon-size;
-  background-image: url(../img/icon.png)
+  background-image: url("@{images}icon.png")
 }
 
 .icon-phone::before {
   .icon-size;
-  background-image: url(../img/contact.png);
+  background-image: url("@{images}contact.png");
 }
-
-
 
 .block-line {
   .line(5px, @main-color);
