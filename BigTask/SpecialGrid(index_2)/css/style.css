@@ -80,7 +80,6 @@ time {
 }
 
 .main-title {
-  width: 94%;
   font-size: 54px;
   text-align: center;
   line-height: 53px;
@@ -429,9 +428,9 @@ time {
 }
 
 .column-item-avatar {
-  width: 54%;
   margin: 45px auto;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .column-item-profile {
@@ -641,3 +640,13 @@ footer {
 
 }
 
+
+
+/* form mode */
+.profile-form {
+  display: none;
+}
+
+.contact-list {
+  display: block;
+}

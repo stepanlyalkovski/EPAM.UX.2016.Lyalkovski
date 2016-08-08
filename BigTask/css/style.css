@@ -80,7 +80,6 @@ time {
 }
 
 .main-title {
-  width: 94%;
   font-size: 54px;
   text-align: center;
   line-height: 53px;
@@ -423,9 +422,9 @@ time {
 }
 
 .column-item-avatar {
-  width: 54%;
   margin: 45px auto;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .column-item-profile {
@@ -525,10 +524,6 @@ footer {
 
 }
 
-.contact-list {
-  display: none;
-}
-
 .profile-form {
   margin-top: 16px;
   padding-left: 2.5%;
@@ -565,6 +560,24 @@ footer {
   font-weight: bold;
 }
 
+.profile-form-item a {
+  display: none;
+}
+
+/*
+.form-mode-readonly input{
+  display: none;
+}
+
+.form-mode-readonly a {
+  display: inline-block;
+}
+
+.form-mode-readonly #e-mail,
+.form-mode-readonly #website, {
+  display: none;
+}
+*/
 
 @media all and (max-width: 850px) {
 
@@ -630,4 +643,15 @@ footer {
     margin: auto;
   }
 
+}
+
+
+
+/* form mode */
+.profile-form {
+  display: none;
+}
+
+.contact-list {
+  display: block;
 }
